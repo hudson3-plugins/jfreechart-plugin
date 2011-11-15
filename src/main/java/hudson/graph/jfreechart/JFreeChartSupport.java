@@ -181,6 +181,9 @@ public class JFreeChartSupport extends GraphSupport {
                 }
             };
             plot.setRenderer(ar);
+            ar.setSeriesPaint(0,ColorPalette.RED); // Failures.
+            ar.setSeriesPaint(1,ColorPalette.YELLOW); // Skips.
+            ar.setSeriesPaint(2,ColorPalette.BLUE); // Total.
         }
 
         // crop extra space around the graph
