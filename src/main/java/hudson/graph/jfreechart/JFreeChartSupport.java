@@ -23,6 +23,9 @@
  */
 package hudson.graph.jfreechart;
 
+import hudson.util.ColorPalette;
+import hudson.util.StackedAreaRenderer2;
+import hudson.util.ShiftedCategoryAxis;
 import org.jfree.data.category.DefaultCategoryDataset;
 import org.jfree.chart.ChartRenderingInfo;
 import org.jfree.chart.ChartUtilities;

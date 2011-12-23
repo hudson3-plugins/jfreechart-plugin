@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package hudson.graph.jfreechart;
+package hudson.util;
 
 import org.jfree.chart.axis.CategoryAxis;
 import org.jfree.chart.axis.AxisState;
