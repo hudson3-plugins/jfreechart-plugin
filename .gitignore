@@ -13,3 +13,7 @@ work
 .classpath
 .project
 build
+
+# Mac OS X files
+.DS_Store
+

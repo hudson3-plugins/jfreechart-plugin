@@ -41,12 +41,12 @@ import org.jfree.data.category.CategoryDataset;
 import org.jfree.ui.RectangleInsets;
 
 import hudson.Extension;
-import hudson.util.graph.ChartLabel;
-import hudson.util.graph.DataSet;
-import hudson.util.graph.Graph;
-import hudson.util.graph.GraphSupport;
-import hudson.util.graph.GraphSupportDescriptor;
-import hudson.util.graph.MultiStageTimeSeries;
+import org.eclipse.hudson.graph.ChartLabel;
+import org.eclipse.hudson.graph.DataSet;
+import org.eclipse.hudson.graph.Graph;
+import org.eclipse.hudson.graph.GraphSupport;
+import org.eclipse.hudson.graph.GraphSupportDescriptor;
+import org.eclipse.hudson.graph.MultiStageTimeSeries;
 import java.awt.BasicStroke;
 import java.awt.image.BufferedImage;
 import java.awt.Color;
