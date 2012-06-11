@@ -11,7 +11,7 @@
     <groupId>org.hudsonci.plugins</groupId>
     <artifactId>jfreechart-plugin</artifactId>
     <packaging>hpi</packaging>
-    <version>1.3</version>
+    <version>1.4-SNAPSHOT</version>
     
     <name>JFreeChart  Plugin</name>
     <url>https://wiki.hudson-ci.org/display/HUDSON/JFreeChart+Plugin</url>
