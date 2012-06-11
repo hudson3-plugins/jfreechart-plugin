@@ -39,7 +39,7 @@
           </snapshotRepository>
           <repository>
               <id>sonatype-nexus-staging</id>
-              <name>Nexus Release Repository</name>
+              <name>Nexus Staging Repository</name>
               <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
           </repository>
     </distributionManagement>
