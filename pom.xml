@@ -16,6 +16,40 @@
     <name>JFreeChart  Plugin</name>
     <url>https://wiki.hudson-ci.org/display/HUDSON/JFreeChart+Plugin</url>
     
+    <description>This Plugin provides support for Graphing using JFreecart library.</description>
+    
+    <licenses>
+        <license>
+            <name>The MIT license</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <scm>
+        <connection>scm:git:git://github.com/hudson3-plugins/jfreechart-plugin.git</connection>
+        <developerConnection>scm:git:git@github.com:hudson3-plugins/jfreechart-plugin.git</developerConnection>
+        <url>https://github.com/hudson3-plugins/jfreechart-plugin</url>
+    </scm>
+    
+    <properties>
+        <hudsonTags>misc</hudsonTags>
+    </properties>
+
+    <developers>
+        <developer>
+            <id>wjprakash</id>
+            <name>Winston Prakash</name>
+            <roles>
+                <role>
+                    Maintainer
+                </role>
+            </roles>
+            <email>
+                winston.prakash@gmail.com
+            </email>
+        </developer>
+    </developers>
+    
     <dependencies> 
         <dependency>
             <groupId>junit</groupId>
@@ -106,24 +140,4 @@
           <scope>provided</scope>
         </dependency>
     </dependencies>
-
-    <distributionManagement>
-          <snapshotRepository>
-              <id>sonatype-nexus-snapshots</id>
-              <name>Sonatype Nexus Snapshots</name>
-              <url>${sonatypeOssDistMgmtSnapshotsUrl}</url>
-          </snapshotRepository>
-          <repository>
-              <id>sonatype-nexus-staging</id>
-              <name>Nexus Staging Repository</name>
-              <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-          </repository>
-    </distributionManagement>
-
-    <scm>
-        <connection>scm:git:git://github.com/hudson3-plugins/${project.artifactId}.git</connection>
-        <developerConnection>scm:git:git@github.com:hudson3-plugins/${project.artifactId}.git</developerConnection>
-        <url>https://github.com/hudson3-plugins/${project.artifactId}</url>
-    </scm>
-
 </project>
