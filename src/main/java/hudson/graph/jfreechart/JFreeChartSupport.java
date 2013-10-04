@@ -72,7 +72,8 @@ public class JFreeChartSupport extends GraphSupport {
     private String yAxisLabel;
     public List<MultiStageTimeSeries> multiStageTimeSeries;
 
-    private int chartType = 1; // 1 - StackedArea, 2 - Line
+    
+    private int chartType = Graph.TYPE_STACKED_AREA; // 1 - StackedArea, 2 - Line, 3 - StackedBar
 
     @DataBoundConstructor
     public JFreeChartSupport() {
@@ -101,7 +102,7 @@ public class JFreeChartSupport extends GraphSupport {
         this.multiStageTimeSeries = multiStageTimeSeries;
     }
 
-    public void createChart() {
+    public JFreeChart createChart() {
 
         if (chartType == Graph.TYPE_STACKED_AREA) {
             jFreeChart = ChartFactory.createStackedAreaChart(null, // chart
@@ -166,6 +167,15 @@ public class JFreeChartSupport extends GraphSupport {
 
                 @Override
                 public Paint getItemPaint(int row, int column) {
+                    if (row == 2){
+                        return ColorPalette.BLUE;
+                    }
+                    if (row == 1){
+                        return ColorPalette.YELLOW;
+                    }
+                    if (row == 0){
+                        return ColorPalette.RED;
+                    }
                     ChartLabel key = (ChartLabel) dataset.getColumnKey(column);
                     return key.getColor(row, column);
                 }
@@ -191,6 +201,8 @@ public class JFreeChartSupport extends GraphSupport {
 
         // crop extra space around the graph
         plot.setInsets(new RectangleInsets(0, 0, 0, 5.0));
+        
+        return jFreeChart;
     }
 
     @Override
